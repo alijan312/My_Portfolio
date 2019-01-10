@@ -22,16 +22,19 @@
         transform: rotate(180deg);
 
         .btn-line {
+
             // Line 1 - Rotate
-            &:nth-child(1){
+            &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
+
             // Line 2 - Hide
-            &:nth-child(2){
+            &:nth-child(2) {
                 opacity: 0;
             }
+
             // Line 3 - Rotate
-            &:nth-child(3){
+            &:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px);
             }
         }
@@ -49,7 +52,7 @@
         visibility: visible;
     }
 
-    &-branding, 
+    &-branding,
     &-nav {
         display: flex;
         flex-flow: column wrap;
@@ -71,7 +74,7 @@
 
         &.show {
             //Slide in from top
-            transform: translate3d(0, 0 , 0);
+            transform: translate3d(0, 0, 0);
         }
     }
 
@@ -89,11 +92,11 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url(/dist/img/aj-250px.jpg);
+            background: url(./dist/img/aj-250px.jpg);
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
-        
+
     }
 
     .nav-item {
@@ -102,10 +105,10 @@
 
         &.show {
             //Slide in from right
-            transform: translate3d(0, 0 , 0);
+            transform: translate3d(0, 0, 0);
         }
 
-        &.current > a {
+        &.current>a {
             color: $secondary-color;
         }
     }
